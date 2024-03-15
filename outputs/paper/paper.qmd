@@ -1,0 +1,36 @@
+---
+title: "aaa"
+author: "Shuyang Qiu"
+thanks: "Code and data are available at: ."
+date: today
+date-format: long
+abstract: "123"
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+```{r}
+#| include: false
+#### Workspace setup ####
+
+
+library(tidyverse)
+library(here)
+library(knitr)
+
+#### Read in cleaned data ####
+
+#data <- read_csv(file = here("outputs/data/cleaned_data.csv"))
+```
+
+
+# Introduction
+
+# Data {#sec-data}
+
+# Results
+
+# References
+
+
