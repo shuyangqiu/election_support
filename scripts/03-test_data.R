@@ -1,10 +1,9 @@
 #### Preamble ####
-# Purpose: Tests cleaned data to check for correct number of wards and reasonable income and population values.
+# Purpose: Tests cleaned CES data.
 # Author: Shuyang Qiu
-# Date: 24 January 2023
+# Date: 14 March 2024
 # Contact: shuyang.qiu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: None
 
 
 #### Workspace setup ####
