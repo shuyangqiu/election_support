@@ -5,7 +5,6 @@
 .httr-oauth
 .DS_Store
 .lintr
-inputs/data/
 
 # History files
 .Rhistory
