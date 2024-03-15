@@ -1,10 +1,10 @@
 #### Preamble ####
-# Purpose: Cleans and combines the raw ward and raw water datasets.
+# Purpose: Cleans raw CES data.
 # Author: Shuyang Qiu
-# Date: 24 January 2023
+# Date: 14 March 2024
 # Contact: shuyang.qiu@mail.utoronto.ca
 # License: MIT
-# Pre-requisites: None
+
 
 #### Workspace setup ####
 library(tidyverse)
