@@ -16,9 +16,12 @@ data <- read_parquet("./outputs/data/cleaned_data.parquet")
 education_levels <- c("No HS", "High school graduate", "Some college", "2-year", "4-year", "Post-grad")
 races <- c("White", "Black", "Hispanic", "Asian", "Other")
 
+# Check all values are valid
 all(data$voted_for %in% c("Trump", "Biden"))
 all(data$education %in% education_levels)
 all(data$race %in% races)
+
+# Check all possible values exist
 data$voted_for |> levels() |> length() == 2
 data$education |> levels() |> length() == education_levels |> length()
 data$race |> levels() |> length() == races |> length()
