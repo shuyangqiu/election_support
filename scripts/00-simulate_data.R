@@ -16,13 +16,15 @@ set.seed(111)
 num_obs <- 1000
 
 us_political_preferences <- tibble(
+  # Generate random numbers for education levels and race
   education = sample(0:4, size = num_obs, replace = TRUE),
   race = sample(0:3, size = num_obs, replace = TRUE),
   support_prob = ((education + race) / 7),
 ) |>
   mutate(
     supports_biden = if_else(runif(n = num_obs) < support_prob, "yes", "no"),
-    education = case_when(
+    # Convert numbers to readable labels
+    education = case_when( 
       education == 0 ~ "< High school",
       education == 1 ~ "High school",
       education == 2 ~ "Some college",
@@ -48,6 +50,7 @@ races <-
   c("White", "Black", "Hispanic", "Asian") |>
   sort()
 
+# Tests values are generated if and only if they are valid
 us_political_preferences$supports_biden |> unique() |> sort() == c("yes", "no") |> sort()
 us_political_preferences$education |> unique() |> sort() == education_levels
 us_political_preferences$race |> unique() |> sort() == races
